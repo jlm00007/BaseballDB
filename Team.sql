@@ -1,0 +1,7 @@
+SELECT TOP (1000) [TID]
+      ,[Team Name]
+      ,[City]
+      ,[State]
+      ,[League]
+      ,[Division]
+  FROM [BaseballSQL].[dbo].[Team]
