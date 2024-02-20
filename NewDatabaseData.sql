@@ -1,7 +1,7 @@
 use BaseballDB
 
 -- Inserting mock data into the Team table for all MLB teams
-INSERT INTO [dbo].[TEAM] ([TID], [TName], [City], [State], [League], [Division])
+INSERT INTO [dbo].[Team] ([TID], [TName], [City], [State], [League], [Division])
 VALUES
     (1, 'Yankees', 'New York City', 'New York', 'MLB', 'AL East'),
     (2, 'Red Sox', 'Boston', 'Massachusetts', 'MLB', 'AL East'),
