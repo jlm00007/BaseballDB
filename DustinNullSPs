@@ -2,7 +2,7 @@ CREATE PROC spAddPlayer
     @PID SMALLINT,
     @Name NVARCHAR(max),
     @Number NVARCHAR(max),
-    @Position NVARCHAR(max),
+    @Position NVARCHAR(max), 
     @TID SMALLINT
 AS
 BEGIN 
