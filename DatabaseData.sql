@@ -50,10 +50,3 @@ VALUES
 (4, 365, 10, 20),
 (5, 298, 0, 36);
 
-/** does not work yet **/
-INSERT INTO [dbo].[City] ([CID], [TID], [Name], [Zip]) 
-VALUES
-(1, 1, 'New York City', '10001'),
-(2, 2, 'Boston', '10002'),
-(3, 3, 'Tampa Bay', '10003'),
-(4, 4, 'Toronto', '10004');
