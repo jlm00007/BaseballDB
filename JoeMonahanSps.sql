@@ -1,6 +1,7 @@
 use BaseballSQL
 go 
 
+/**  Shows a player and their position **/
 CREATE PROC spPlayerPos
 @Position NVARCHAR(MAX)
 AS
@@ -14,6 +15,8 @@ GO
 
 EXEC spPlayerPos @Position = 'RF';
 
+
+/** Shows a Player and their stats **/
 CREATE or ALter PROC spPlayerStat
 @Name NVARCHAR(MAX) 
 
