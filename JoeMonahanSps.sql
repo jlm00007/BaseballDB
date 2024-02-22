@@ -14,3 +14,15 @@ GO
 
 EXEC spPlayerPos @Position = 'RF';
 
+CREATE or ALter PROC spPlayerStat
+@Name NVARCHAR(MAX) 
+
+AS
+BEGIN
+SELECT [Name], [Position] FROM Player as P
+Inner JOIN Stat as S on S.PID=P.PID
+where [Name] = @Name;
+end;
+go
+
+EXEC spPlayerStat @Name = 'Aaron Judge';
