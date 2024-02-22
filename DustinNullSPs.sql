@@ -19,7 +19,7 @@ EXEC spAddPlayer 301,'Shohei Ohtani', '17', 'Pitcher', 13;
 GO
 
 CREATE PROC spGetPlayerDetails
-@PID smallint
+@PID SMALLINT
 AS
 SELECT * 
 FROM Player
