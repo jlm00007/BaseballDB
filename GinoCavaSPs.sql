@@ -1,4 +1,4 @@
-Use BaseballSQL
+Use BaseballDB
 GO
 CREATE PROCEDURE spGetPlayersByTeam
     @TeamID smallint
@@ -17,7 +17,7 @@ CREATE PROCEDURE spGetTeamsByDivision
     @DivisionName NVARCHAR(MAX)
 AS
 BEGIN
-    SELECT [TID], [Team Name], [City], [State], [League], [Division]
+    SELECT [TID], [TName], [City], [State], [League], [Division]
     FROM [Team]
     WHERE [Division] = @DivisionName;
 END;
