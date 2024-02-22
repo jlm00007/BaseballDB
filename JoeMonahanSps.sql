@@ -22,7 +22,7 @@ CREATE or ALter PROC spPlayerStat
 
 AS
 BEGIN
-SELECT [Name], [Position] FROM Player as P
+SELECT [Name], [Position], [HomeRuns], [Strikeouts] FROM Player as P
 Inner JOIN Stat as S on S.PID=P.PID
 where [Name] = @Name;
 end;
