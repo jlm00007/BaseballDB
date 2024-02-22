@@ -1,3 +1,5 @@
+USE BaseballDB
+
 CREATE PROC  spAddPlayer 
     @PID SMALLINT,
     @Name NVARCHAR(max),
