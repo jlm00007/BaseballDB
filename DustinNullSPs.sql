@@ -1,4 +1,4 @@
-CREATE PROC spAddPlayer 
+CREATE PROC  spAddPlayer 
     @PID SMALLINT,
     @Name NVARCHAR(max),
     @Number NVARCHAR(max),
@@ -10,5 +10,7 @@ INSERT INTO Player (PID, Name, Number, Position, TID)
 VALUES (@PID, @Name, @Number, @Position, @TID);
 
 END;
+GO
 
-EXEC spAddPlayer 6,'Shohei Ohtani', '17', 'Pitcher', 13;
+EXEC spAddPlayer 301,'Shohei Ohtani', '17', 'Pitcher', 13;
+GO
