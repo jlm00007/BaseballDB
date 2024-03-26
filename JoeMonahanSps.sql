@@ -1,4 +1,4 @@
-use BaseballSQL
+use BaseballDB
 go 
 
 /**  Shows a player and their position **/
