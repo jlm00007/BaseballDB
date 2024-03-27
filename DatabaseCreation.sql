@@ -33,7 +33,10 @@ GO
 
 
 
-/****** Object:  Table [dbo].[Stat]    Script Date: 2/22/2024 2:01:30 PM ******/
+USE [BaseballDB]
+GO
+
+/****** Object:  Table [dbo].[Stat]    Script Date: 3/27/2024 4:31:09 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -41,6 +44,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[Stat](
+	[SID] [smallint] NOT NULL,
 	[PID] [smallint] NOT NULL,
 	[Hits] [smallint] NULL,
 	[Strikeouts] [smallint] NULL,
@@ -54,6 +58,8 @@ GO
 
 ALTER TABLE [dbo].[Stat] CHECK CONSTRAINT [FK_Stat_Player]
 GO
+
+
 
 
 /****** Object:  Table [dbo].[Team]    Script Date: 2/22/2024 2:01:46 PM ******/
