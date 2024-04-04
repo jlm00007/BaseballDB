@@ -4,7 +4,7 @@ CREATE PROCEDURE spGetPlayersByTeam
     @TeamID smallint
 AS
 BEGIN
-    SELECT [PID], [Name], [Number], [Position]
+    SELECT *
     FROM [Player]
     WHERE [TID] = @TeamID;
 END;
